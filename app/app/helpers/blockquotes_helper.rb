@@ -1,0 +1,2 @@
+module BlockquotesHelper
+end

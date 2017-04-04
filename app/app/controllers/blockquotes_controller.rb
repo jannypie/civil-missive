@@ -1,0 +1,2 @@
+class BlockquotesController < ApplicationController
+end

@@ -1,0 +1,2 @@
+class Blockquote < ApplicationRecord
+end
