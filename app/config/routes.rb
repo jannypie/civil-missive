@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :articles
   resources :blockquotes
   resources :websites
   resources :pages

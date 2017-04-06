@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170404193701) do
+ActiveRecord::Schema.define(version: 20170404194123) do
+
+  create_table "articles", force: :cascade do |t|
+    t.string   "title"
+    t.string   "author"
+    t.string   "body"
+    t.integer  "referencenumber"
+    t.string   "url"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.index ["referencenumber"], name: "index_articles_on_referencenumber"
+  end
 
   create_table "blockquotes", force: :cascade do |t|
     t.string   "author"
